@@ -73,7 +73,18 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
       DELETE T1, T2
     FROM T1
          INNER JOIN T2 ON T1.id = T2.ref
-    WHERE T1.id = 1;
+    WHERE T1.id = 1
    ```
-
+T1
+|Id|
+|--|
+|~~1~~
+|2
+|3
+T2
+|Id|ref|
+|--|--|
+|~~A~~|~~1~~
+|B|2
+|C|3
     
