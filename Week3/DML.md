@@ -16,9 +16,8 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
 1. 전체 열에 대해 업데이트
    ```sql
    UPDATE 테이블명 SET 컬럼 = 값;
-
-  # 예시
-  UPDATE Salary SET Salary = Salary + 100;
+   #예시
+   UPDATE Salary SET Salary = Salary + 100;
   
   '='은 비교 연산자, 대입 연산자로도 사용 가능
   ```
