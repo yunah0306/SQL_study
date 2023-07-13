@@ -68,3 +68,15 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
    |Id|Name|Salary|Date|
    |------|---|---|---|
    |1|A|250|2020-03-31
+3. 조인 활용
+   ```sql
+   DELETE T1, T2
+   FROM T1
+        INNER JOIN T2 ON T1.key = T2.key
+   WHERE condition;
+   ```
+   |Id|     |ref|id|
+   |--|     |---|--|
+   |1       |1|A|
+   |2       |2|B
+   |3       |3|C
