@@ -79,7 +79,7 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
 
    | Id |
    |----|
-   |  1 |
+   |~~1~~ |
    |  2 |
    |  3 |
     
@@ -87,7 +87,7 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
     
    | Id | ref |
    |----|-----|
-   |  A |   1 |
+   | ~~A~~ |~~1~~ |
    |  B |   2 |
    |  C |   3 |
     
