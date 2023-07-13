@@ -7,7 +7,7 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
 
 ```
 |Id|Name|Salary|Date|
-|------|---|---|
+|------|---|---|---|
 |1|A|250|2020-03-31
 |2|Null|550|Null
 
@@ -21,7 +21,7 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
     '='은 비교 연산자, 대입 연산자로도 사용 가능
     ```
     |Id|Name|Salary|Date|
-    |------|---|---|
+    |------|---|---|---|
     |1|A|350|2020-03-31
     |2|Null|650|Null
 2. 지정 행의 값 갱신하기
@@ -33,10 +33,38 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
     
     '='은 비교 연산자, 대입 연산자로도 사용 가능
    ```
-   |제목|내용|설명|
-    |------|---|---|
+    |Id|Name|Salary|Date|
+    |------|---|---|---|
     |Id|Name|Salary|Date
     |1|A|250|2020-03-31
     |2|Null|650|Null
-   
+3. 조건문 사용
+   ```sql
+   UPDATE table
+    SET 컬럼명 = CASE
+                    WHEN
+                    WHEN
+                ELSE
+                END
+   ```
 ## DELETE 
+1. 테이블 전체
+   ```sql
+   DELETE FROM 테이블명 ;
+
+    # 예시
+    DELETE FROM Salary
+   ```
+   |Id|Name|Salary|Date|
+   |------|---|---|---|
+   
+2. 조건에 맞는 행 삭제
+   ```sql
+   DELETE FROM 테이블명 WHERE 조건식;
+
+    # 예시
+    DELETE FROM Salary WHERE Id = 2;
+   ```
+   |Id|Name|Salary|Date|
+   |------|---|---|---|
+   |1|A|250|2020-03-31
