@@ -1,4 +1,4 @@
-문제링크: https://www.hackerrank.com/challenges/challenges/problem?isFullScreen=true
+문제링크: <https://www.hackerrank.com/challenges/challenges/problem?isFullScreen=true>
 # sol_1
 SELECT hackers.hacker_id,
        hackers.name,
