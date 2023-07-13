@@ -1,3 +1,5 @@
+문제링크: https://leetcode.com/problems/department-highest-salary/
+       
 # sol_1
 SELECT d.name AS Department,
        e.name AS Employee,
