@@ -6,9 +6,8 @@ INSERT INTO 테이블명(column list) values (value_list)
 INSERT INTO Salary(Id,Salary) Values('2,'550')
 
 ```
-|제목|내용|설명|
+|Id|Name|Salary|Date|
 |------|---|---|
-|Id|Name|Salary|Date
 |1|A|250|2020-03-31
 |2|Null|550|Null
 
@@ -21,9 +20,8 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
     
     '='은 비교 연산자, 대입 연산자로도 사용 가능
     ```
-    |제목|내용|설명|
+    |Id|Name|Salary|Date|
     |------|---|---|
-    |Id|Name|Salary|Date
     |1|A|350|2020-03-31
     |2|Null|650|Null
 2. 지정 행의 값 갱신하기
