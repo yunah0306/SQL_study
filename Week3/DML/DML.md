@@ -8,8 +8,8 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
 ```
 |Id|Name|Salary|Date|
 |------|---|---|---|
-|1|A|250|2020-03-31
-|2|Null|550|Null
+|1|A|250|2020-03-31|
+|2|Null|550|Null|
 
 ## UPDATE
 1. 전체 열에 대해 업데이트
@@ -22,8 +22,8 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
     ```
     |Id|Name|Salary|Date|
     |------|---|---|---|
-    |1|A|350|2020-03-31
-    |2|Null|650|Null
+    |1|A|350|2020-03-31|
+    |2|Null|650|Null|
 2. 지정 행의 값 갱신하기
    ```sql
    UPDATE 테이블명 SET 컬럼 = 값 WHERE 조건식;
@@ -35,9 +35,9 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
    ```
     |Id|Name|Salary|Date|
     |------|---|---|---|
-    |Id|Name|Salary|Date
-    |1|A|250|2020-03-31
-    |2|Null|650|Null
+    |Id|Name|Salary|Date|
+    |1|A|250|2020-03-31|
+    |2|Null|650|Null|
 3. 조건문 사용
    ```sql
    UPDATE table
@@ -67,7 +67,7 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
    ```
    |Id|Name|Salary|Date|
    |------|---|---|---|
-   |1|A|250|2020-03-31
+   |1|A|250|2020-03-31|
 3. 조인 활용
    ```sql
       DELETE T1, T2
@@ -75,17 +75,19 @@ INSERT INTO Salary(Id,Salary) Values('2,'550')
          INNER JOIN T2 ON T1.id = T2.ref
     WHERE T1.id = 1
    ```
-T1
-|Id|
-|--|
-|~~1~~
-|2
-|3
+   T1
 
-T2
-|Id|ref|
-|--|--|
-|~~A~~|~~1~~
-|B|2
-|C|3
+   | Id |
+   |----|
+   |  1 |
+   |  2 |
+   |  3 |
+    
+   T2
+    
+   | Id | ref |
+   |----|-----|
+   |  A |   1 |
+   |  B |   2 |
+   |  C |   3 |
     
